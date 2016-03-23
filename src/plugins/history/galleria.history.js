@@ -32,9 +32,8 @@ Galleria.History = (function() {
         get = function( winloc ) {
             if( iframe && !support && Galleria.IE ) {
                 winloc = winloc || iframe.location;
-            } else {
-                iframe.location;
             }
+
             return parseInt( winloc.hash.substr(2), 10 );
         },
 
